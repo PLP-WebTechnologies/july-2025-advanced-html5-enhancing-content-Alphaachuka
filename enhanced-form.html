@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="An enhanced form with additional features and styles.">
+    <meta name="author" content="Ezekiel Alpha">
+    <meta name="keywords" content="form, list, , features">
+    <link rel="stylesheet" href="styles.css">
+    <title>WEEK 2 ASSIGNMENT</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Showcase Page</h1>
+        <p>Demonstrating Lists, Tables, Media & Forms</p>
+    </header>
+
+    <main>
+
+        <!--Lists Section-->
+        <section id="lists">
+            <h2>Favorite Programming Languages</h2>
+            <p>Here are some popular programming languages, grouped by category</p>
+            <h3>Fronted Software Development</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+            </ul>
+            <h3>Backend Software Development</h3>
+            <ol>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Ruby</li>
+            </ol>
+            <h3>Mobile Software Development</h3>
+            <dl>
+                <dt>Android</dt>
+                <dd>Java</dd>
+                <dd>Kotlin</dd>
+                <dt>iOS</dt>
+                <dd>Swift</dd>
+                <dd>Objective-C</dd>
+            </dl>
+        </section>
+
+        <!--Table Section-->
+        <section id="table">
+            <h2>Student Grade Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Grade</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alpha</td>
+                        <td>Computer Science</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Brian</td>
+                        <td>Mathematics</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Brown</td>
+                        <td>Physics</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Average Grade</td>
+                        <td>B</td>
+                    </tr>   
+                </tfoot>
+            </table>
+        </section>
+        <!--Media Section-->
+        <section id="media">
+            <h2>Video showcasing coding in an Editor & My favorite song</h2>
+            <p>Hope you enjoy this sample of a video and audio</p>
+            <video width="320" height="240" controls>
+                <source src="video/12680994_1920_1080_25fps.mp4" alt="Video" type="video/mp4">
+                Your browser does not support the video tag.
+
+            </video>
+            <audio controls>
+                <source src="audio/08. Teddy Swims - Lose Control.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!--Form Section-->
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form action="" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="Fullname">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8">
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                           title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" 
+                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                           title="Must contain at least one number, one uppercase and lowercase letter, and at least 8 or more characters">
+           
+                <fieldset>
+
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        <label for="language">Preferred Programming Language:</label>
+                        <select id="language" name="language">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="python">Python</option>
+                        </select>
+
+                        <p>Subsription Type:</p>
+                        <input type="radio" id="free" name="subscription" value="free" checked>
+                        <label for="free">Free</label> 
+                        <input type="radio" id="premium" name="subscription" value="premium">
+                        <label for="premium">Premium</label> 
+                        <input type="radio" id="vip" name="subscription" value="vip">
+                        <label for="vip">VIP</label>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <label for="bio">Bio:</label>
+                        <textarea id="bio" name="bio" rows="4" cols="50"  maxlength ="200" placeholder=" us about yourself..."></textarea>
+                        <label>
+                            <input type="checkbox" name="terms" required>
+                             I agree to the terms and conditions
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Ezekiel Alpha. All rights reserved.</p>
+        <p>Contact: <a href="mailto:ezekielapha0@gmail.com">ezekielalpha@gmail.com</a></p>
+    </footer>
+    
+</body>
+</html>
